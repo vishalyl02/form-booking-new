@@ -1,0 +1,35 @@
+/* App.css */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Section 1 styles without parallax effect */
+.section-1 {
+  height: 100vh;
+  background-image: url('https://your-background-image-url.jpg'); /* Set your background image URL */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: brightness(0.7); /* Adjust the brightness for better visibility of the form */
+  display: flex;
+  align-items: flex-start;
+}
+
+/* Booking form styles */
+.booking-form {
+  width: 50%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Section 2 styles */
+.section-2 {
+  background-color: #f5f5f5; /* Set background color for the testimonial section */
+  padding: 50px;
+}
