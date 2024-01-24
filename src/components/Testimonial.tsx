@@ -24,8 +24,9 @@ const Testimonial: React.FC<TestimonialProps> = ({ id, content, author, image })
             {content}
           </Typography>
           <Typography variant="caption" color="text.secondary">
-            - {author}
-          </Typography>
+  - <strong>{author}</strong>
+</Typography>
+
         </CardContent>
       </Card>
     </Grid>

@@ -2,7 +2,7 @@
 body {
     margin: 0;
     padding: 0;
-    background: url('https://images.unsplash.com/photo-1612276529731-4b21494e6d71?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjI2fHxkb2N0b3JzfGVufDB8fDB8fHww') center/cover no-repeat fixed; /* Set your image URL here */
+    background: url('https://img.freepik.com/free-photo/pleased-young-female-doctor-wearing-medical-robe-stethoscope-around-neck-standing-with-closed-posture_409827-254.jpg?size=626&ext=jpg&uid=R135379297&ga=GA1.1.884806722.1706062679&semt=ais') center/cover no-repeat fixed; /* Set your image URL here */
     height: 100vh;
   }
   
@@ -11,20 +11,20 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    margin:30px;
+    margin:50px;
   }
   
   .form-container {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    text-align: center;
   }
   
   .small-form {
     background: rgba(255, 255, 255, 0.8); /* Adjust the transparency as needed */
     padding: 20px;
     border-radius: 10px;
-    width:500px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add a box shadow for better visibility */
     z-index: 1; /* Ensure the form is above the background image */
   
