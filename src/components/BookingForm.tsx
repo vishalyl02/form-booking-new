@@ -56,8 +56,13 @@ const BookingForm: React.FC<BookingFormProps> = ({ selectedCity }) => {
 
   const handleConfirmBooking = () => {
     setBookingConfirmed(true);
+  
+    const randomAppointmentNumber = Math.floor(Math.random() * 1000) + 1;
+  
+    alert(`Thank you for contacting! We'll reach you soon.\nYour appointment number is: ${randomAppointmentNumber}.`);
+  
+    window.location.reload();
   };
-
   interface Doctor {
     id: number;
     name: string;
@@ -232,9 +237,15 @@ const BookingForm: React.FC<BookingFormProps> = ({ selectedCity }) => {
                 Continue
               </Button>
             ) : (
-              <Button type="submit" variant="contained" color="primary" fullWidth>
-                Confirm Booking
-              </Button>
+              <Button
+              type="submit"
+              variant="contained"
+              color="primary"
+              fullWidth
+              onClick={handleConfirmBooking} // Call handleConfirmBooking when the button is clicked
+            >
+              Confirm Booking
+            </Button>
             )}
           </form>
        
