@@ -1,4 +1,4 @@
-// TestimonialSlider.tsx
+
 import React, { useState } from 'react';
 import { Grid, Button } from '@mui/material';
 import Testimonial from './Testimonial';

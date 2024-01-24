@@ -1,4 +1,4 @@
-// Testimonial.tsx
+
 import React from 'react';
 import { Typography, Paper, Grid, Button, Card, CardContent, CardMedia } from '@mui/material';
 

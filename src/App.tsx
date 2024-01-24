@@ -1,4 +1,4 @@
-// App.tsx
+
 import React from 'react';
 import './App.css';
 import BookingForm from './components/BookingForm';

@@ -50,7 +50,7 @@ const BookingForm: React.FC<BookingFormProps> = ({ selectedCity }) => {
   const [doctorsList, setDoctorsList] = useState<string[]>([]);
 
   useEffect(() => {
-    // Fetch all doctors list from the API
+
     fetchDoctorsList();
   }, []);
 
@@ -71,9 +71,9 @@ const BookingForm: React.FC<BookingFormProps> = ({ selectedCity }) => {
     fetch('https://server-list-ru5x.onrender.com/doctors')
       .then((response) => response.json())
       .then((data: { doctors: Doctor[] }) => {
-        // Check if data.doctors is an array before using map
+     
         if (Array.isArray(data.doctors)) {
-          // Extract doctors' names from the API response
+        
           const names = data.doctors.map((doctor: Doctor) => doctor.name);
           setDoctorsList(names);
         } else {
@@ -88,7 +88,7 @@ const BookingForm: React.FC<BookingFormProps> = ({ selectedCity }) => {
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | { name?: string; value: unknown }> | SelectChangeEvent<string>
   ) => {
-    // Use a callback function to ensure the latest state is used
+
     setFormData((prevFormData) => ({
       ...prevFormData,
       [e.target.name as string]: (e as React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | { name?: string; value: unknown }>).target.value,
@@ -101,7 +101,7 @@ const BookingForm: React.FC<BookingFormProps> = ({ selectedCity }) => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Implement form submission logic here, e.g., show confirmation message
+
     console.log('Form submitted:', formData);
   };
 

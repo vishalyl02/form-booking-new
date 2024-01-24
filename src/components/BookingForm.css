@@ -1,4 +1,4 @@
-/* BookingForm.css */
+
 body {
     margin: 0;
     padding: 0;
@@ -22,18 +22,18 @@ body {
   }
   
   .small-form {
-    background: rgba(255, 255, 255, 0.8); /* Adjust the transparency as needed */
+    background: rgba(255, 255, 255, 0.8); 
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add a box shadow for better visibility */
-    z-index: 1; /* Ensure the form is above the background image */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    z-index: 1; 
   
 }
   .form-preview {
     background-color: white;
     padding: 20px;
-    border: 1px solid #ddd; /* Add a border for separation */
+    border: 1px solid #ddd; 
     border-radius: 5px;
   }
-  /* Add any additional styling for the form content */
+
   
