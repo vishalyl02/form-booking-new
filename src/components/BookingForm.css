@@ -1,39 +1,45 @@
-
 body {
-    margin: 0;
-    padding: 0;
-    background: url('https://img.freepik.com/free-photo/pleased-young-female-doctor-wearing-medical-robe-stethoscope-around-neck-standing-with-closed-posture_409827-254.jpg?size=626&ext=jpg&uid=R135379297&ga=GA1.1.884806722.1706062679&semt=ais') center/cover no-repeat fixed; /* Set your image URL here */
-    height: 100vh;
-  }
-  
-  .booking-form {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    margin:50px;
-  }
-  
-  .form-container {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    text-align: center;
-  }
-  
-  .small-form {
-    background: rgba(255, 255, 255, 0.8); 
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
-    z-index: 1; 
-  
+  margin: 0;
+  padding: 0;
+  background: url('https://img.freepik.com/free-photo/healthcare-workers-medicine-insurance-covid-pandemic-concept-smiling-attractive-female-doctor-ph_1258-92302.jpg?w=2000&t=st=1706097768~exp=1706098368~hmac=2f130ae3049e9ecfd6c30194d22ea5bdcab42a28cbda8f9396d489333543719d') center/cover no-repeat fixed;
+  height: 100vh;
 }
-  .form-preview {
-    background-color: white;
-    padding: 20px;
-    border: 1px solid #ddd; 
-    border-radius: 5px;
-  }
 
-  
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 20px;
+}
+
+.booking-form {
+  display: flex;
+  align-items: center;
+  margin-top: 100px;
+  justify-content: center;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 100px;
+  text-align: center;
+}
+
+.small-form {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+.form-preview {
+  background-color: white;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}

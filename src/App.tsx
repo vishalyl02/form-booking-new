@@ -1,6 +1,6 @@
-
 import React from 'react';
 import './App.css';
+import './AppDarkTheme.css';  // Import dark theme styles
 import BookingForm from './components/BookingForm';
 import Testimonials from './components/Testimonials';
 

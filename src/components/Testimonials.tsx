@@ -1,6 +1,5 @@
-
 import React, { useState } from 'react';
-import { Grid, Button } from '@mui/material';
+import { Grid, Button, createTheme, ThemeProvider } from '@mui/material';
 import Testimonial from './Testimonial';
 
 interface TestimonialData {
@@ -33,16 +32,28 @@ const TestimonialSlider: React.FC = () => {
   const handlePrev = () => {
     setStartIndex((prevIndex) => Math.max(0, prevIndex - 3));
   };
+  const darkTheme = createTheme({
+    palette: {
+      mode: 'dark',
+    },
+  });
 
   return (
     <>
       <Grid container spacing={2}>
         {testimonialData.slice(startIndex, startIndex + 3).map((testimonial) => (
-          <Testimonial key={testimonial.id} {...testimonial} />
+          <ThemeProvider key={testimonial.id} theme={darkTheme}>
+            <Testimonial {...testimonial} />
+          </ThemeProvider>
         ))}
       </Grid>
-      <Button onClick={handlePrev} disabled={startIndex === 0}>Prev</Button>
-      <Button onClick={handleNext} disabled={startIndex + 3 >= testimonialData.length}>Next</Button>
+      <Button onClick={handlePrev} disabled={startIndex === 0} style={{ color: '#2ecc71' }}>
+  Prev
+</Button>
+
+      <Button onClick={handleNext} disabled={startIndex + 3 >= testimonialData.length}style={{ color: '#2ecc71' }}>
+        Next
+      </Button>
     </>
   );
 };
